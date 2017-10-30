@@ -1,29 +1,37 @@
-# README #
+# nuxt_work
 
-This README would normally document whatever steps are necessary to get your application up and running.
+> Nuxt.js project
 
-### What is this repository for? ###
+## Build Setup
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-### How do I get set up? ###
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+# build for production and launch server
+$ npm run build
+$ npm start
 
-### Contribution guidelines ###
+# generate static project
+$ npm run generate
+```
 
-* Writing tests
-* Code review
-* Other guidelines
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
-### Who do I talk to? ###
+##トラブルシューティング
+まれに以下のエラーが出て、立ち上がらない場合あり。
 
-* Repo owner or admin
-* Other community or team contact
+``` Error: getaddrinfo ENOTFOUND localhost
+    at errnoException (dns.js:28:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+```
+
+その場合は以下の通りの方法を試して下さい
+(Macの場合)
+- /etc/hostsを編集し、以下を追加
+
+```127.0.0.1       localhost
+```
