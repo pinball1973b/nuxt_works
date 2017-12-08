@@ -89,7 +89,8 @@ export default {
     }
   },
   created () {
-      //trello_api
+      //trello_api 実際異使用する際はtrelloよりkeyとtokenを発行すること
+      //https://developers.trello.com/
     axios.get(`https://api.trello.com/`)
       .then(response => {
         // JSON responses are automatically parsed.
